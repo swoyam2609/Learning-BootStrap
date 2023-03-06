@@ -1,87 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Landing Page</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            screens: {
-              'sm': '640px',
-              'md': '768px',
-              'lg': '1024px',
-              'xl': '1280px',
-            },
-            extend: {
-              colors: {
-                brightRed: '#ff0000',
-                brightRedLight: '#ff4d4d',
-                brightRedSupLight: '#ff8080',
-                darkBlue: '#0000ff',
-                darkGrayishBlue: '#4d4d4d',
-                veryDarkBlue: '#000033',
-                veryPaleRed: '#ffcccc',
-                veryLightGray: '#f2f2f2',
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="relative container mx-auto p-6">
-        <!-- Flex Container -->
-        <div class="flex items-center justify-between">
-            <!-- logo -->
-            <div class="pt-2">
-                <img src="./images/logo.svg" alt="">
-            </div>
-            <!-- Menu Items -->
-            <div class="md:flex hidden space-x-6">
-                <a class="hover:text-darkGrayishBlue" href="#">Pricing</a>
-                <a class="hover:text-darkGrayishBlue" href="#">Product</a>
-                <a class="hover:text-darkGrayishBlue" href="#">About Us</a>
-                <a class="hover:text-darkGrayishBlue" href="#">Careers</a>
-                <a class="hover:text-darkGrayishBlue" href="#">Community</a>
-            </div>
-            <!-- Button -->
-            <a href="" class=" hidden md:block px-6 py-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
-                Get Started
-            </a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
-            <!-- Left Items -->
-            <div class="flex flex-col mb-32 space-y-16 md:y-1/2">
-                <!-- Main Heading USP -->
-                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
-                    Bring everyone together to build better projects
-                </h1>
-                <!-- SHort Description -->
-                <p class="max-w-md text-1xl text-darkGrayishBlue">
-                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-                </p>
-                <!-- Getting Started Button -->
-                <a class="px-6 py-2 text-white font-semibold items-center rounded-3xl bg-brightRedLight hover:bg-brightRedSupLight w-36" href="#">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manage Landing Page</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    screens: {
+                        sm: "640px",
+                        md: "768px",
+                        lg: "1024px",
+                        xl: "1280px",
+                    },
+                    extend: {
+                        colors: {
+                            brightRed: "#ff0000",
+                            brightRedLight: "#ff4d4d",
+                            brightRedSupLight: "#ff8080",
+                            darkBlue: "#0000ff",
+                            darkGrayishBlue: "#4d4d4d",
+                            veryDarkBlue: "#000033",
+                            veryPaleRed: "#ffcccc",
+                            veryLightGray: "#9c9696",
+                            clifford: "#da373d",
+                            orange: "#ff4d00",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="relative container mx-auto p-6">
+            <!-- Flex Container -->
+            <div class="flex items-center justify-between">
+                <!-- logo -->
+                <div class="pt-2">
+                    <img src="./images/logo.svg" alt="" />
+                </div>
+                <!-- Menu Items -->
+                <div class="md:flex hidden space-x-6">
+                    <a class="hover:text-darkGrayishBlue" href="#">Pricing</a>
+                    <a class="hover:text-darkGrayishBlue" href="#">Product</a>
+                    <a class="hover:text-darkGrayishBlue" href="#">About Us</a>
+                    <a class="hover:text-darkGrayishBlue" href="#">Careers</a>
+                    <a class="hover:text-darkGrayishBlue" href="#">Community</a>
+                </div>
+                <!-- Button -->
+                <a
+                    href=""
+                    class="hidden md:block px-6 py-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+                >
                     Get Started
                 </a>
             </div>
+        </nav>
 
-            <!-- Image  -->
-            <div class="md:w-1/2">
-                <img src="./images/illustration-intro.svg" alt="">
+        <!-- Hero Section -->
+        <section id="hero">
+            <!-- Complete Container -->
+            <div
+                class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+            >
+                <!-- Left Items -->
+                <div class="flex flex-col mb-32 space-y-10 md:y-1/2">
+                    <!-- Main Heading USP -->
+                    <h1
+                        class="max-w-md text-4xl font-extrabold text-center md:text-5xl md:text-left"
+                    >
+                        Bring everyone together to build better projects
+                    </h1>
+
+                    <!-- Short Description -->
+                    <p
+                        class="max-w-md text-1xl font-semibold text-veryLightGray md:text-left text-center"
+                    >
+                        Manage makes it simple for software teams to plan
+                        day-to-day tasks while keeping the larger team goals in
+                        view.
+                    </p>
+
+                    <!-- Getting Started Button -->
+                    <a
+                        class="px-6 py-2 text-white font-semibold items-center rounded-3xl bg-brightRedLight hover:bg-brightRedSupLight w-36 md:m-0 mx-auto"
+                        href="#"
+                    >
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Image  -->
+                <div class="md:w-1/2 ml-auto">
+                    <img src="./images/illustration-intro.svg" alt="" />
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-</body>
+        <!-- Features Section -->
+        <section id="features">
+            <!-- Complete Container -->
+            <div
+                class="container flex flex-col items-center mx-auto mt-10 space-y-0 md:flex-row px-6"
+            >
+                <!-- Left Items -->
+                <div class="w-1/2 flex flex-col space-y-8 pr-16 mt-0 mb-auto">
+                    <h1 class="text-4xl font-extrabold align-top">
+                        What's different about Manage?
+                    </h1>
+
+                    <p class="text-1xl text-veryLightGray font-semibold">
+                        Manage provides all the functionality your team needs,
+                        without the complexity. Our software is tailor-made for
+                        modern digital product teams.
+                    </p>
+                </div>
+
+                <!-- Right Items -->
+                <div class="w-1/2 flex flex-col space-y-5 pl-10">
+                    <!-- element 1 -->
+                    <div class="flex flex-row">
+                        <div class="bg-orange py-1 px-4 text-2xl text-white font-semibold rounded-full h-10">01</div>
+
+                        <div class="flex flex-col space-y-2 px-4">
+                            <p class=" text-2xl font-bold py-1">
+                                Track Company wide progress
+                            </p>
+                            <p class="text-1xl text-veryLightGray font-normal">
+                                See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- element 2 -->
+                    <div class="flex flex-row">
+                        <div class="bg-orange py-1 px-4 text-2xl text-white font-semibold rounded-full h-10">02</div>
+
+                        <div class="flex flex-col space-y-2 px-4">
+                            <p class=" text-2xl font-bold py-1">
+                                Advanced Built-in Reports
+                            </p>
+                            <p class="text-1xl text-veryLightGray font-normal">
+                                Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- element 3 -->
+                    <div class="flex flex-row">
+                        <div class="bg-orange py-1 px-4 text-2xl text-white font-semibold rounded-full h-10">03</div>
+
+                        <div class="flex flex-col space-y-2 px-4">
+                            <p class=" text-2xl font-bold py-1">
+                                Everything you need in one place
+                            </p>
+                            <p class="text-1xl text-veryLightGray font-normal">
+                                Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
